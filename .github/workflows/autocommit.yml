@@ -2,7 +2,7 @@ name: studious-umbrella
 on:
   push:
     branches:
-      - master
+      - main
   schedule:
   - cron: "2 * * * *"
 jobs:
