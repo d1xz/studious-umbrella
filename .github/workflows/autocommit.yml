@@ -9,7 +9,7 @@ jobs:
   auto_commit:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2      
+      - uses: actions/checkout@v3      
         with:
          persist-credentials: false
          fetch-depth: 0
@@ -19,7 +19,7 @@ jobs:
           echo $d > LAST_UPDATED
       - name: Commit changes
         run: |
-          git config --local user.email "emailhaha30@yahoo.com"
+          git config --local user.email "d1xz@users.noreply.github.com"
           git config --local user.name "d1xz"
           git add -A
           arr[0]="Lucifer(bot): 😀"
@@ -1834,7 +1834,7 @@ jobs:
           rand=$[$RANDOM % ${#arr[@]}]
           git commit -m "${arr[$rand]}"
       - name: GitHub Push
-        uses: ad-m/github-push-action@v0.5.0
+        uses: ad-m/github-push-action@v0.6.0
         with:
           force: true
           directory: "."
